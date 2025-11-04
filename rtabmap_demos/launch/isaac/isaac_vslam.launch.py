@@ -26,7 +26,8 @@ def launch_setup(context, *args, **kwargs):
           'subscribe_rgbd': True,
           'subscribe_odom': enable_vo,
           'subscribe_odom_info': enable_vo,
-          'approx_sync': False,
+          'approx_sync': True,
+          'wait_for_transform': 0.2,
           'use_action_for_goal':True,
           'Reg/Force3DoF':'true',
           'Vis/MinDepth': '0.2',
@@ -66,7 +67,7 @@ def launch_setup(context, *args, **kwargs):
             condition=UnlessCondition(stereo),
             package='rtabmap_sync', executable='rgbd_sync', output='screen',
             namespace=stereo_ns,
-            parameters=[{'approx_sync':False, 'use_sim_time':use_sim_time}],
+            parameters=[{'approx_sync':True, 'use_sim_time':use_sim_time}],
             remappings=[
                 ('rgb/image', 'left/image_rect'),
                 ('rgb/camera_info', 'left/camera_info_rect'),
@@ -76,7 +77,7 @@ def launch_setup(context, *args, **kwargs):
             condition=IfCondition(stereo),
             package='rtabmap_sync', executable='stereo_sync', output='screen',
             namespace=stereo_ns,
-            parameters=[{'approx_sync':False, 'use_sim_time':use_sim_time}],
+            parameters=[{'approx_sync':True, 'use_sim_time':use_sim_time}],
             remappings=[
                 ('left/image_rect', 'left/image_rect'),
                 ('left/camera_info', 'left/camera_info_rect'),
