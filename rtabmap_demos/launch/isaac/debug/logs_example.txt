@@ -1,0 +1,509 @@
+$ ros2 launch rtabmap_demos isaac_sim_vslam_demo.launch.py
+[INFO] [launch]: All log files can be found below /home/admin/.ros/log/2025-11-05-13-47-26-065140-void-Precision-5690-2796
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [stereo_sync-1]: process started with pid [2808]
+[INFO] [rtabmap-2]: process started with pid [2810]
+[INFO] [rtabmap_viz-3]: process started with pid [2812]
+[INFO] [controller_server-4]: process started with pid [2814]
+[INFO] [smoother_server-5]: process started with pid [2816]
+[INFO] [planner_server-6]: process started with pid [2818]
+[INFO] [behavior_server-7]: process started with pid [2820]
+[INFO] [bt_navigator-8]: process started with pid [2822]
+[INFO] [waypoint_follower-9]: process started with pid [2824]
+[INFO] [velocity_smoother-10]: process started with pid [2826]
+[INFO] [lifecycle_manager-11]: process started with pid [2828]
+[INFO] [rviz2-12]: process started with pid [2830]
+[INFO] [component_container_mt-13]: process started with pid [2832]
+[rviz2-12] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-admin'
+[lifecycle_manager-11] [INFO] [1762325246.289767631] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-11] [INFO] [1762325246.293492145] [lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
+[planner_server-6] [INFO] [1762325246.294126343] [planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1762325246.297368085] [planner_server]: Creating
+[behavior_server-7] [INFO] [1762325246.299604538] [behavior_server]: 
+[behavior_server-7] 	behavior_server lifecycle node launched. 
+[behavior_server-7] 	Waiting on external lifecycle transitions to activate
+[behavior_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-5] [INFO] [1762325246.300725565] [smoother_server]: 
+[smoother_server-5] 	smoother_server lifecycle node launched. 
+[smoother_server-5] 	Waiting on external lifecycle transitions to activate
+[smoother_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-5] [INFO] [1762325246.302172104] [smoother_server]: Creating smoother server
+[velocity_smoother-10] [INFO] [1762325246.307186813] [velocity_smoother]: 
+[velocity_smoother-10] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-10] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-9] [INFO] [1762325246.308328236] [waypoint_follower]: 
+[waypoint_follower-9] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-9] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-9] [INFO] [1762325246.308759809] [waypoint_follower]: Creating
+[controller_server-4] [INFO] [1762325246.309626144] [controller_server]: 
+[controller_server-4] 	controller_server lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1762325246.315912091] [controller_server]: Creating controller server
+[bt_navigator-8] [INFO] [1762325246.317498984] [bt_navigator]: 
+[bt_navigator-8] 	bt_navigator lifecycle node launched. 
+[bt_navigator-8] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-8] [INFO] [1762325246.317636506] [bt_navigator]: Creating
+[planner_server-6] [INFO] [1762325246.322776123] [global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1762325246.323229589] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-4] [INFO] [1762325246.328919706] [local_costmap.local_costmap]: 
+[controller_server-4] 	local_costmap lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1762325246.329205626] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-11] [INFO] [1762325246.428743501] [lifecycle_manager_navigation]: Starting managed nodes bringup...
+[lifecycle_manager-11] [INFO] [1762325246.428837154] [lifecycle_manager_navigation]: Configuring controller_server
+[controller_server-4] [INFO] [1762325246.429414595] [controller_server]: Configuring controller interface
+[controller_server-4] [INFO] [1762325246.430072330] [controller_server]: getting goal checker plugins..
+[controller_server-4] [INFO] [1762325246.430882466] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-4] [INFO] [1762325246.431355782] [local_costmap.local_costmap]: Configuring
+[controller_server-4] [INFO] [1762325246.456073541] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[rviz2-12] [INFO] [1762325246.466440049] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-12] [INFO] [1762325246.466565999] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[controller_server-4] [INFO] [1762325246.470773659] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_mt-13] [INFO] [1762325246.487808358] [front_stereo_camera.stereo_img_proc_container]: Load Library: /opt/ros/humble/lib/libresize_node.so
+[controller_server-4] [INFO] [1762325246.490956647] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-4] [INFO] [1762325246.491001416] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-4] [INFO] [1762325246.493602583] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[rviz2-12] [INFO] [1762325246.500606802] [rviz2]: Stereo is NOT SUPPORTED
+[controller_server-4] [INFO] [1762325246.522926108] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-4] [INFO] [1762325246.524474347] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-4] [INFO] [1762325246.527146800] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-4] [INFO] [1762325246.529525121] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-4] [INFO] [1762325246.531658582] [controller_server]: Setting transform_tolerance to 0.200000
+[component_container_mt-13] [INFO] [1762325246.541229546] [front_stereo_camera.stereo_img_proc_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::image_proc::ResizeNode>
+[component_container_mt-13] [INFO] [1762325246.541831923] [front_stereo_camera.stereo_img_proc_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::image_proc::ResizeNode>
+[controller_server-4] [INFO] [1762325246.559365299] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-4] [INFO] [1762325246.559836588] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1762325246.559932369] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-4] [INFO] [1762325246.560131146] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1762325246.560200361] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-4] [INFO] [1762325246.560283933] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1762325246.560339888] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-4] [INFO] [1762325246.560620506] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1762325246.560688789] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-4] [INFO] [1762325246.561338414] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1762325246.561413554] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-4] [INFO] [1762325246.561524048] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1762325246.561578745] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-4] [INFO] [1762325246.561677469] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1762325246.561694325] [controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_mt-13] [INFO] [1762325246.595253843] [front_stereo_camera.left_resize_node]: [NitrosNode] Initializing NitrosNode
+[component_container_mt-13] [INFO] [1762325246.596720401] [NitrosContext]: [NitrosContext] Loading extension: gxf/lib/std/libgxf_std.so
+[component_container_mt-13] [INFO] [1762325246.597562056] [NitrosContext]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_gxf_helpers.so
+[component_container_mt-13] [INFO] [1762325246.599999525] [NitrosContext]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_sight.so
+[component_container_mt-13] [INFO] [1762325246.602092979] [NitrosContext]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_atlas.so
+[lifecycle_manager-11] [INFO] [1762325246.605753405] [lifecycle_manager_navigation]: Configuring smoother_server
+[smoother_server-5] [INFO] [1762325246.606203971] [smoother_server]: Configuring smoother server
+[stereo_sync-1] [INFO] [1762325246.607552400] [front_stereo_camera.stereo_sync]: stereo_sync: approx_sync = false
+[stereo_sync-1] [INFO] [1762325246.607731352] [front_stereo_camera.stereo_sync]: stereo_sync: approx_sync_max_interval = 0.000000
+[stereo_sync-1] [INFO] [1762325246.607750004] [front_stereo_camera.stereo_sync]: stereo_sync: topic_queue_size  = 10
+[stereo_sync-1] [INFO] [1762325246.607755166] [front_stereo_camera.stereo_sync]: stereo_sync: sync_queue_size   = 10
+[stereo_sync-1] [INFO] [1762325246.607760030] [front_stereo_camera.stereo_sync]: stereo_sync: qos             = 0
+[stereo_sync-1] [INFO] [1762325246.607764711] [front_stereo_camera.stereo_sync]: stereo_sync: qos_camera_info = 0
+[stereo_sync-1] [INFO] [1762325246.607768826] [front_stereo_camera.stereo_sync]: stereo_sync: compressed_rate = 0.000000
+[component_container_mt-13] 2025-11-05 13:47:26.611 WARN  gxf/std/program.cpp@538: No GXF scheduler specified.
+[component_container_mt-13] [INFO] [1762325246.612331314] [front_stereo_camera.left_resize_node]: [NitrosNode] Starting NitrosNode
+[component_container_mt-13] [INFO] [1762325246.627082408] [front_stereo_camera.left_resize_node]: [NitrosNode] Loading extensions
+[component_container_mt-13] [INFO] [1762325246.627151422] [front_stereo_camera.left_resize_node]: [NitrosContext] Loading extension: gxf/lib/multimedia/libgxf_multimedia.so
+[component_container_mt-13] [INFO] [1762325246.629089420] [front_stereo_camera.left_resize_node]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_message_compositor.so
+[component_container_mt-13] [INFO] [1762325246.629362003] [front_stereo_camera.left_resize_node]: [NitrosContext] Loading extension: gxf/lib/cuda/libgxf_cuda.so
+[component_container_mt-13] [INFO] [1762325246.630946463] [front_stereo_camera.left_resize_node]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_tensorops.so
+[component_container_mt-13] [INFO] [1762325246.633668697] [front_stereo_camera.left_resize_node]: [NitrosNode] Loading graph to the optimizer
+[stereo_sync-1] [INFO] [1762325246.636381686] [front_stereo_camera.stereo_sync]: 
+[stereo_sync-1] stereo_sync subscribed to (exact sync):
+[stereo_sync-1]    /front_stereo_camera/left/image_rect,
+[stereo_sync-1]    /front_stereo_camera/right/image_rect,
+[stereo_sync-1]    /front_stereo_camera/left/camera_info_rect,
+[stereo_sync-1]    /front_stereo_camera/right/camera_info_rect
+[smoother_server-5] [INFO] [1762325246.637264722] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_mt-13] [INFO] [1762325246.637583501] [front_stereo_camera.left_resize_node]: [NitrosNode] Running optimization
+[smoother_server-5] [INFO] [1762325246.638473600] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[rtabmap_viz-3] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-admin'
+[lifecycle_manager-11] [INFO] [1762325246.664617212] [lifecycle_manager_navigation]: Configuring planner_server
+[planner_server-6] [INFO] [1762325246.670657243] [planner_server]: Configuring
+[planner_server-6] [INFO] [1762325246.671216337] [global_costmap.global_costmap]: Configuring
+[rtabmap-2] [INFO] [1762325246.678709225] [rtabmap.rtabmap]: rtabmap(maps): latch                      = true
+[rtabmap-2] [INFO] [1762325246.678909880] [rtabmap.rtabmap]: rtabmap(maps): map_filter_radius          = 0.000000
+[rtabmap-2] [INFO] [1762325246.678931269] [rtabmap.rtabmap]: rtabmap(maps): map_filter_angle           = 30.000000
+[rtabmap-2] [INFO] [1762325246.678937825] [rtabmap.rtabmap]: rtabmap(maps): map_cleanup                = true
+[rtabmap-2] [INFO] [1762325246.678942149] [rtabmap.rtabmap]: rtabmap(maps): map_always_update          = false
+[rtabmap-2] [INFO] [1762325246.678946351] [rtabmap.rtabmap]: rtabmap(maps): map_empty_ray_tracing      = true
+[rtabmap-2] [INFO] [1762325246.678950768] [rtabmap.rtabmap]: rtabmap(maps): cloud_output_voxelized     = true
+[rtabmap-2] [INFO] [1762325246.678954780] [rtabmap.rtabmap]: rtabmap(maps): cloud_subtract_filtering   = false
+[rtabmap-2] [INFO] [1762325246.678958745] [rtabmap.rtabmap]: rtabmap(maps): cloud_subtract_filtering_min_neighbors = 2
+[rtabmap-2] [INFO] [1762325246.679004681] [rtabmap.rtabmap]: rtabmap(maps): octomap_tree_depth         = 16
+[planner_server-6] [INFO] [1762325246.691159636] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-6] [INFO] [1762325246.693373321] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-6] [INFO] [1762325246.695285966] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-6] [INFO] [1762325246.695343921] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-6] [INFO] [1762325246.695840449] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-6] [INFO] [1762325246.700062603] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-6] [INFO] [1762325246.700148432] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-6] [INFO] [1762325246.700958077] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[rtabmap_viz-3] [INFO] [1762325246.703536982] [rtabmap.rtabmap_viz]: rtabmap_viz: Using configuration from "/home/admin/.ros/rtabmapGUI.ini"
+[planner_server-6] [INFO] [1762325246.712508156] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-6] [INFO] [1762325246.712560880] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1762325246.712894992] [planner_server]: Planner Server has GridBased  planners available.
+[rtabmap-2] [INFO] [1762325246.717449512] [rtabmap.rtabmap]: rtabmap: frame_id      = base_link
+[rtabmap-2] [INFO] [1762325246.717489133] [rtabmap.rtabmap]: rtabmap: odom_frame_id = odom
+[rtabmap-2] [INFO] [1762325246.717494778] [rtabmap.rtabmap]: rtabmap: map_frame_id  = map
+[rtabmap-2] [INFO] [1762325246.717498637] [rtabmap.rtabmap]: rtabmap: log_to_rosout_level  = 4
+[rtabmap-2] [INFO] [1762325246.717503649] [rtabmap.rtabmap]: rtabmap: initial_pose  = 
+[rtabmap-2] [INFO] [1762325246.717506825] [rtabmap.rtabmap]: rtabmap: use_action_for_goal  = true
+[rtabmap-2] [INFO] [1762325246.717509620] [rtabmap.rtabmap]: rtabmap: tf_delay      = 0.050000
+[rtabmap-2] [INFO] [1762325246.717520070] [rtabmap.rtabmap]: rtabmap: tf_tolerance  = 0.100000
+[rtabmap-2] [INFO] [1762325246.717524240] [rtabmap.rtabmap]: rtabmap: odom_sensor_sync   = false
+[rtabmap-2] [INFO] [1762325246.717528858] [rtabmap.rtabmap]: rtabmap: pub_loc_pose_only_when_localizing = false
+[rtabmap-2] [INFO] [1762325246.717532537] [rtabmap.rtabmap]: rtabmap: wait_for_transform = 0.200000
+[rtabmap-2] [INFO] [1762325246.717537629] [rtabmap.rtabmap]: rtabmap: gen_scan  = false
+[rtabmap-2] [INFO] [1762325246.717541402] [rtabmap.rtabmap]: rtabmap: gen_depth  = false
+[lifecycle_manager-11] [INFO] [1762325246.724103269] [lifecycle_manager_navigation]: Configuring behavior_server
+[behavior_server-7] [INFO] [1762325246.724587580] [behavior_server]: Configuring
+[behavior_server-7] [INFO] [1762325246.730938217] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-7] [INFO] [1762325246.731668636] [behavior_server]: Configuring spin
+[rtabmap-2] [INFO] [1762325246.735259778] [rtabmap.rtabmap]: Setting RTAB-Map parameter "GFTT/MinDistance"="5" (rosparam)
+[rtabmap-2] [INFO] [1762325246.735360960] [rtabmap.rtabmap]: Setting RTAB-Map parameter "GFTT/QualityLevel"="0.00001" (rosparam)
+[rtabmap-2] [INFO] [1762325246.735702874] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Grid/3D"="false" (rosparam)
+[rtabmap-2] [INFO] [1762325246.736568747] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Grid/MaxGroundHeight"="0.15" (rosparam)
+[rtabmap-2] [INFO] [1762325246.736646541] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Grid/MaxObstacleHeight"="0.5" (rosparam)
+[behavior_server-7] [INFO] [1762325246.736718347] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[rtabmap-2] [INFO] [1762325246.736776640] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Grid/NoiseFilteringMinNeighbors"="8" (rosparam)
+[rtabmap-2] [INFO] [1762325246.736814003] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Grid/NoiseFilteringRadius"="0.1" (rosparam)
+[rtabmap-2] [INFO] [1762325246.736894340] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Grid/NormalsSegmentation"="false" (rosparam)
+[rtabmap-2] [INFO] [1762325246.737023655] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Grid/RangeMin"="0.2" (rosparam)
+[rtabmap-2] [INFO] [1762325246.737076134] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Grid/RayTracing"="true" (rosparam)
+[behavior_server-7] [INFO] [1762325246.737395063] [behavior_server]: Configuring backup
+[behavior_server-7] [INFO] [1762325246.741963872] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-7] [INFO] [1762325246.742619109] [behavior_server]: Configuring drive_on_heading
+[rtabmap-2] [INFO] [1762325246.745681424] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Optimizer/GravitySigma"="0" (rosparam)
+[behavior_server-7] [INFO] [1762325246.749350715] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-7] [INFO] [1762325246.750648332] [behavior_server]: Configuring assisted_teleop
+[rtabmap-2] [INFO] [1762325246.750979273] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Reg/Force3DoF"="true" (rosparam)
+[rtabmap-2] [INFO] [1762325246.758018428] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Vis/MinDepth"="0.2" (rosparam)
+[rtabmap-2] [INFO] [1762325246.760834809] [rtabmap.rtabmap]: RTAB-Map detection rate = 1.000000 Hz
+[behavior_server-7] [INFO] [1762325246.761031924] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[rtabmap-2] [INFO] [1762325246.761098928] [rtabmap.rtabmap]: rtabmap: Deleted database "/home/admin/.ros/rtabmap.db" (--delete_db_on_start or -d are set).
+[rtabmap-2] [INFO] [1762325246.761138433] [rtabmap.rtabmap]: rtabmap: Using database from "/home/admin/.ros/rtabmap.db" (0 MB).
+[behavior_server-7] [INFO] [1762325246.761894971] [behavior_server]: Configuring wait
+[lifecycle_manager-11] [INFO] [1762325246.783902241] [lifecycle_manager_navigation]: Configuring bt_navigator
+[bt_navigator-8] [INFO] [1762325246.785788328] [bt_navigator]: Configuring
+[component_container_mt-13] [INFO] [1762325246.832810799] [front_stereo_camera.left_resize_node]: [NitrosNode] Obtaining graph IO group info from the optimizer
+[rtabmap-2] [INFO] [1762325246.841264587] [rtabmap.rtabmap]: rtabmap: Database version = "0.22.1".
+[rtabmap-2] [INFO] [1762325246.841323518] [rtabmap.rtabmap]: rtabmap: SLAM mode (Mem/IncrementalMemory=true)
+[lifecycle_manager-11] [INFO] [1762325246.841385586] [lifecycle_manager_navigation]: Configuring waypoint_follower
+[waypoint_follower-9] [INFO] [1762325246.841815479] [waypoint_follower]: Configuring
+[component_container_mt-13] [INFO] [1762325246.848899137] [front_stereo_camera.left_resize_node]: [NitrosNode] Starting negotiation...
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/front_stereo_camera/left_resize_node' in container '/front_stereo_camera/stereo_img_proc_container'
+[component_container_mt-13] [INFO] [1762325246.853102172] [front_stereo_camera.stereo_img_proc_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::image_proc::ResizeNode>
+[component_container_mt-13] [INFO] [1762325246.853167205] [front_stereo_camera.stereo_img_proc_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::image_proc::ResizeNode>
+[waypoint_follower-9] [INFO] [1762325246.855575307] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-11] [INFO] [1762325246.858243207] [lifecycle_manager_navigation]: Configuring velocity_smoother
+[velocity_smoother-10] [INFO] [1762325246.858649441] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-11] [INFO] [1762325246.862792267] [lifecycle_manager_navigation]: Activating controller_server
+[controller_server-4] [INFO] [1762325246.864477070] [controller_server]: Activating
+[controller_server-4] [INFO] [1762325246.864686307] [local_costmap.local_costmap]: Activating
+[controller_server-4] [INFO] [1762325246.864709952] [local_costmap.local_costmap]: Checking transform
+[controller_server-4] [INFO] [1762325246.865472679] [local_costmap.local_costmap]: start
+[component_container_mt-13] [INFO] [1762325246.879920509] [front_stereo_camera.right_resize_node]: [NitrosNode] Initializing NitrosNode
+[component_container_mt-13] [INFO] [1762325246.881221022] [front_stereo_camera.right_resize_node]: [NitrosNode] Starting NitrosNode
+[rtabmap-2] [INFO] [1762325246.885148525] [rtabmap.rtabmap]: Setup callbacks
+[rtabmap-2] [WARN] [1762325246.885324510] [rtabmap.rtabmap]: rtabmap: Parameters subscribe_depth and subscribe_rgbd cannot be true at the same time. Parameter subscribe_depth is set to false.
+[rtabmap-2] [INFO] [1762325246.885577096] [rtabmap.rtabmap]: rtabmap: subscribe_depth = false
+[rtabmap-2] [INFO] [1762325246.885614222] [rtabmap.rtabmap]: rtabmap: subscribe_rgb = false
+[rtabmap-2] [INFO] [1762325246.885626935] [rtabmap.rtabmap]: rtabmap: subscribe_stereo = false
+[rtabmap-2] [INFO] [1762325246.885638446] [rtabmap.rtabmap]: rtabmap: subscribe_rgbd = true (rgbd_cameras=1)
+[rtabmap-2] [INFO] [1762325246.885650783] [rtabmap.rtabmap]: rtabmap: subscribe_sensor_data = false
+[rtabmap-2] [INFO] [1762325246.885661822] [rtabmap.rtabmap]: rtabmap: subscribe_odom_info = false
+[rtabmap-2] [INFO] [1762325246.885672179] [rtabmap.rtabmap]: rtabmap: subscribe_user_data = false
+[rtabmap-2] [INFO] [1762325246.885682112] [rtabmap.rtabmap]: rtabmap: subscribe_scan = false
+[rtabmap-2] [INFO] [1762325246.885693896] [rtabmap.rtabmap]: rtabmap: subscribe_scan_cloud = false
+[rtabmap-2] [INFO] [1762325246.885704919] [rtabmap.rtabmap]: rtabmap: subscribe_scan_descriptor = false
+[rtabmap-2] [INFO] [1762325246.885715206] [rtabmap.rtabmap]: rtabmap: topic_queue_size = 10
+[rtabmap-2] [INFO] [1762325246.885725545] [rtabmap.rtabmap]: rtabmap: sync_queue_size  = 10
+[rtabmap-2] [INFO] [1762325246.885735311] [rtabmap.rtabmap]: rtabmap: qos_image       = 0
+[rtabmap-2] [INFO] [1762325246.885746453] [rtabmap.rtabmap]: rtabmap: qos_camera_info = 0
+[rtabmap-2] [INFO] [1762325246.885757020] [rtabmap.rtabmap]: rtabmap: qos_scan        = 0
+[rtabmap-2] [INFO] [1762325246.885768256] [rtabmap.rtabmap]: rtabmap: qos_odom        = 0
+[rtabmap-2] [INFO] [1762325246.885779634] [rtabmap.rtabmap]: rtabmap: qos_user_data   = 0
+[rtabmap-2] [INFO] [1762325246.885790123] [rtabmap.rtabmap]: rtabmap: approx_sync     = false
+[rtabmap-2] [INFO] [1762325246.885821110] [rtabmap.rtabmap]: Setup rgbd callback
+[rtabmap-2] [INFO] [1762325246.887768783] [rtabmap.rtabmap]: 
+[rtabmap-2] rtabmap subscribed to:
+[rtabmap-2]    /front_stereo_camera/rgbd_image
+[component_container_mt-13] [INFO] [1762325246.894787612] [front_stereo_camera.right_resize_node]: [NitrosNode] Loading extensions
+[component_container_mt-13] [INFO] [1762325246.894883830] [front_stereo_camera.right_resize_node]: [NitrosNode] Loading graph to the optimizer
+[component_container_mt-13] [INFO] [1762325246.896804575] [front_stereo_camera.right_resize_node]: [NitrosNode] Running optimization
+[component_container_mt-13] [INFO] [1762325247.024298549] [front_stereo_camera.right_resize_node]: [NitrosNode] Obtaining graph IO group info from the optimizer
+[component_container_mt-13] [INFO] [1762325247.032256217] [front_stereo_camera.right_resize_node]: [NitrosNode] Starting negotiation...
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/front_stereo_camera/right_resize_node' in container '/front_stereo_camera/stereo_img_proc_container'
+[component_container_mt-13] [INFO] [1762325247.034215843] [front_stereo_camera.stereo_img_proc_container]: Load Library: /opt/ros/humble/lib/librectify_node.so
+[component_container_mt-13] [INFO] [1762325247.036231548] [front_stereo_camera.stereo_img_proc_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::image_proc::RectifyNode>
+[component_container_mt-13] [INFO] [1762325247.036261392] [front_stereo_camera.stereo_img_proc_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::image_proc::RectifyNode>
+[component_container_mt-13] [INFO] [1762325247.042674304] [front_stereo_camera.left_rectify_node]: [NitrosNode] Initializing NitrosNode
+[component_container_mt-13] [INFO] [1762325247.043642027] [front_stereo_camera.left_rectify_node]: [NitrosNode] Starting NitrosNode
+[component_container_mt-13] [INFO] [1762325247.051145359] [front_stereo_camera.left_rectify_node]: [NitrosNode] Loading extensions
+[component_container_mt-13] [INFO] [1762325247.051242637] [front_stereo_camera.left_rectify_node]: [NitrosNode] Loading graph to the optimizer
+[component_container_mt-13] [INFO] [1762325247.053201780] [front_stereo_camera.left_rectify_node]: [NitrosNode] Running optimization
+[controller_server-4] [INFO] [1762325247.066501592] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[component_container_mt-13] [INFO] [1762325247.093235899] [front_stereo_camera.left_rectify_node]: [NitrosNode] Obtaining graph IO group info from the optimizer
+[component_container_mt-13] [INFO] [1762325247.101379190] [front_stereo_camera.left_rectify_node]: [NitrosNode] Starting negotiation...
+[component_container_mt-13] [INFO] [1762325247.102322096] [front_stereo_camera.left_resize_node]: Negotiating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/front_stereo_camera/left_rectify_node' in container '/front_stereo_camera/stereo_img_proc_container'
+[component_container_mt-13] [INFO] [1762325247.103216081] [front_stereo_camera.left_resize_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.103631875] [front_stereo_camera.left_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.103651713] [front_stereo_camera.left_rectify_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.103658671] [front_stereo_camera.left_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.103661647] [front_stereo_camera.left_rectify_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.104892171] [front_stereo_camera.stereo_img_proc_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::image_proc::RectifyNode>
+[component_container_mt-13] [INFO] [1762325247.104914185] [front_stereo_camera.stereo_img_proc_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::image_proc::RectifyNode>
+[component_container_mt-13] [INFO] [1762325247.114067453] [front_stereo_camera.right_rectify_node]: [NitrosNode] Initializing NitrosNode
+[component_container_mt-13] [INFO] [1762325247.115334810] [front_stereo_camera.right_rectify_node]: [NitrosNode] Starting NitrosNode
+[component_container_mt-13] [INFO] [1762325247.123152511] [front_stereo_camera.right_rectify_node]: [NitrosNode] Loading extensions
+[component_container_mt-13] [INFO] [1762325247.123252298] [front_stereo_camera.right_rectify_node]: [NitrosNode] Loading graph to the optimizer
+[component_container_mt-13] [INFO] [1762325247.126400031] [front_stereo_camera.right_rectify_node]: [NitrosNode] Running optimization
+[component_container_mt-13] [INFO] [1762325247.169046845] [front_stereo_camera.right_rectify_node]: [NitrosNode] Obtaining graph IO group info from the optimizer
+[lifecycle_manager-11] [INFO] [1762325247.172353690] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-11] [INFO] [1762325247.172449941] [lifecycle_manager_navigation]: Activating smoother_server
+[smoother_server-5] [INFO] [1762325247.172796353] [smoother_server]: Activating
+[smoother_server-5] [INFO] [1762325247.172846183] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[component_container_mt-13] [INFO] [1762325247.179102607] [front_stereo_camera.right_rectify_node]: [NitrosNode] Starting negotiation...
+[component_container_mt-13] [INFO] [1762325247.180482611] [front_stereo_camera.right_resize_node]: Negotiating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/front_stereo_camera/right_rectify_node' in container '/front_stereo_camera/stereo_img_proc_container'
+[component_container_mt-13] [INFO] [1762325247.181735616] [front_stereo_camera.right_resize_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.182330633] [front_stereo_camera.right_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.182350887] [front_stereo_camera.right_rectify_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.182359094] [front_stereo_camera.right_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.182363323] [front_stereo_camera.right_rectify_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.182535311] [front_stereo_camera.stereo_img_proc_container]: Load Library: /opt/ros/humble/lib/libdisparity_node.so
+[component_container_mt-13] [INFO] [1762325247.194654276] [front_stereo_camera.stereo_img_proc_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::stereo_image_proc::DisparityNode>
+[component_container_mt-13] [INFO] [1762325247.194694086] [front_stereo_camera.stereo_img_proc_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::stereo_image_proc::DisparityNode>
+[component_container_mt-13] [INFO] [1762325247.202770075] [front_stereo_camera.disparity_node]: [NitrosNode] Initializing NitrosNode
+[component_container_mt-13] [INFO] [1762325247.203923324] [front_stereo_camera.disparity_node]: [NitrosNode] Starting NitrosNode
+[component_container_mt-13] [INFO] [1762325247.206333645] [front_stereo_camera.disparity_node]: [NitrosNode] Loading extensions
+[component_container_mt-13] [INFO] [1762325247.206456833] [front_stereo_camera.disparity_node]: [NitrosContext] Loading extension: gxf/lib/serialization/libgxf_serialization.so
+[component_container_mt-13] [INFO] [1762325247.208747589] [front_stereo_camera.disparity_node]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_sgm.so
+[component_container_mt-13] [INFO] [1762325247.209265224] [NitrosContext]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_messages.so
+[component_container_mt-13] [INFO] [1762325247.209705624] [front_stereo_camera.disparity_node]: [NitrosNode] Loading graph to the optimizer
+[component_container_mt-13] [INFO] [1762325247.213124179] [front_stereo_camera.disparity_node]: [NitrosNode] Running optimization
+[component_container_mt-13] [INFO] [1762325247.276868474] [front_stereo_camera.disparity_node]: [NitrosNode] Obtaining graph IO group info from the optimizer
+[lifecycle_manager-11] [INFO] [1762325247.276949311] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-11] [INFO] [1762325247.277018234] [lifecycle_manager_navigation]: Activating planner_server
+[planner_server-6] [INFO] [1762325247.277411663] [planner_server]: Activating
+[planner_server-6] [INFO] [1762325247.277447553] [global_costmap.global_costmap]: Activating
+[planner_server-6] [INFO] [1762325247.277456883] [global_costmap.global_costmap]: Checking transform
+[planner_server-6] [INFO] [1762325247.277553619] [global_costmap.global_costmap]: start
+[component_container_mt-13] [INFO] [1762325247.289534508] [front_stereo_camera.disparity_node]: [NitrosNode] Starting negotiation...
+[component_container_mt-13] [INFO] [1762325247.290160816] [front_stereo_camera.left_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.290177710] [front_stereo_camera.right_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.290189512] [front_stereo_camera.left_rectify_node]: Could not negotiate
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/front_stereo_camera/disparity_node' in container '/front_stereo_camera/stereo_img_proc_container'
+[component_container_mt-13] [INFO] [1762325247.290224770] [front_stereo_camera.right_rectify_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.290358982] [front_stereo_camera.right_resize_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.290373576] [front_stereo_camera.left_resize_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.290560117] [front_stereo_camera.left_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.290563146] [front_stereo_camera.right_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.291089457] [front_stereo_camera.right_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.291126390] [front_stereo_camera.right_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.291875237] [front_stereo_camera.right_resize_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.292031529] [front_stereo_camera.disparity_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.292066639] [front_stereo_camera.disparity_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.292079166] [front_stereo_camera.left_resize_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.292146528] [front_stereo_camera.stereo_img_proc_container]: Load Library: /opt/ros/humble/lib/libdisparity_to_depth_node.so
+[component_container_mt-13] [INFO] [1762325247.292740814] [front_stereo_camera.right_resize_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.293587461] [front_stereo_camera.stereo_img_proc_container]: Found class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::stereo_image_proc::DisparityToDepthNode>
+[component_container_mt-13] [INFO] [1762325247.293603708] [front_stereo_camera.stereo_img_proc_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nvidia::isaac_ros::stereo_image_proc::DisparityToDepthNode>
+[component_container_mt-13] [INFO] [1762325247.294391791] [front_stereo_camera.left_resize_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.294530961] [front_stereo_camera.left_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.295166713] [front_stereo_camera.right_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.295568142] [front_stereo_camera.left_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.295621818] [front_stereo_camera.right_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.295643210] [front_stereo_camera.right_rectify_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.295674357] [front_stereo_camera.disparity_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.295703581] [front_stereo_camera.disparity_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.296652975] [front_stereo_camera.left_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.296689868] [front_stereo_camera.left_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.296699231] [front_stereo_camera.left_rectify_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.303397114] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Initializing NitrosNode
+[component_container_mt-13] [INFO] [1762325247.304659870] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Starting NitrosNode
+[component_container_mt-13] [INFO] [1762325247.307361021] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Loading extensions
+[component_container_mt-13] [INFO] [1762325247.307485040] [front_stereo_camera.disparity_to_depth_node]: [NitrosContext] Loading extension: gxf/lib/libgxf_isaac_utils.so
+[component_container_mt-13] [INFO] [1762325247.311827090] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Loading graph to the optimizer
+[component_container_mt-13] [INFO] [1762325247.312372061] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Running optimization
+[component_container_mt-13] [INFO] [1762325247.313460937] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Obtaining graph IO group info from the optimizer
+[component_container_mt-13] [INFO] [1762325247.316443292] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Starting negotiation...
+[component_container_mt-13] [INFO] [1762325247.317563211] [front_stereo_camera.disparity_node]: Negotiating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/front_stereo_camera/disparity_to_depth_node' in container '/front_stereo_camera/stereo_img_proc_container'
+[component_container_mt-13] [INFO] [1762325247.317587155] [front_stereo_camera.disparity_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.317729225] [front_stereo_camera.right_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.317736566] [front_stereo_camera.left_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.317758139] [front_stereo_camera.right_rectify_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.317764291] [front_stereo_camera.left_rectify_node]: Could not negotiate
+[component_container_mt-13] [INFO] [1762325247.318062708] [front_stereo_camera.right_rectify_node]: Negotiating
+[component_container_mt-13] [INFO] [1762325247.318093955] [front_stereo_camera.left_rectify_node]: Negotiating
+[rtabmap_viz-3] libpng warning: iCCP: known incorrect sRGB profile
+[rtabmap_viz-3] libpng warning: iCCP: known incorrect sRGB profile
+[rtabmap_viz-3] libpng warning: iCCP: known incorrect sRGB profile
+[rtabmap_viz-3] [INFO] [1762325247.533007465] [rtabmap.rtabmap_viz]: Reading parameters from the ROS server...
+[rtabmap_viz-3] [INFO] [1762325247.563129058] [rtabmap.rtabmap_viz]: Parameters read = 387
+[rtabmap_viz-3] [INFO] [1762325247.563189123] [rtabmap.rtabmap_viz]: Parameters successfully read.
+[rtabmap_viz-3] [INFO] [1762325247.715547437] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_depth = false
+[rtabmap_viz-3] [INFO] [1762325247.715590584] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_rgb = false
+[rtabmap_viz-3] [INFO] [1762325247.715595575] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_stereo = false
+[rtabmap_viz-3] [INFO] [1762325247.715599785] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_rgbd = true (rgbd_cameras=1)
+[rtabmap_viz-3] [INFO] [1762325247.715604580] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_sensor_data = false
+[rtabmap_viz-3] [INFO] [1762325247.715608734] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_odom_info = false
+[rtabmap_viz-3] [INFO] [1762325247.715612227] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_user_data = false
+[rtabmap_viz-3] [INFO] [1762325247.715615568] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_scan = false
+[rtabmap_viz-3] [INFO] [1762325247.715619116] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_scan_cloud = false
+[rtabmap_viz-3] [INFO] [1762325247.715623337] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_scan_descriptor = false
+[rtabmap_viz-3] [INFO] [1762325247.715627379] [rtabmap.rtabmap_viz]: rtabmap_viz: topic_queue_size = 10
+[rtabmap_viz-3] [INFO] [1762325247.715631472] [rtabmap.rtabmap_viz]: rtabmap_viz: sync_queue_size  = 10
+[rtabmap_viz-3] [INFO] [1762325247.715636539] [rtabmap.rtabmap_viz]: rtabmap_viz: qos_image       = 0
+[rtabmap_viz-3] [INFO] [1762325247.715640176] [rtabmap.rtabmap_viz]: rtabmap_viz: qos_camera_info = 0
+[rtabmap_viz-3] [INFO] [1762325247.715644867] [rtabmap.rtabmap_viz]: rtabmap_viz: qos_scan        = 0
+[rtabmap_viz-3] [INFO] [1762325247.715650981] [rtabmap.rtabmap_viz]: rtabmap_viz: qos_odom        = 0
+[rtabmap_viz-3] [INFO] [1762325247.715662501] [rtabmap.rtabmap_viz]: rtabmap_viz: qos_user_data   = 0
+[rtabmap_viz-3] [INFO] [1762325247.715666586] [rtabmap.rtabmap_viz]: rtabmap_viz: approx_sync     = false
+[rtabmap_viz-3] [INFO] [1762325247.715692117] [rtabmap.rtabmap_viz]: Setup rgbd callback
+[rtabmap_viz-3] [INFO] [1762325247.716430008] [rtabmap.rtabmap_viz]: 
+[rtabmap_viz-3] rtabmap_viz subscribed to:
+[rtabmap_viz-3]    /front_stereo_camera/rgbd_image
+[rtabmap_viz-3] [INFO] [1762325247.719030275] [rtabmap.rtabmap_viz]: rtabmap_viz started.
+[component_container_mt-13] [INFO] [1762325247.850400203] [front_stereo_camera.left_resize_node]: [NitrosNode] Starting post negotiation setup
+[component_container_mt-13] [INFO] [1762325247.850463320] [front_stereo_camera.left_resize_node]: [NitrosNode] Getting data format negotiation results
+[component_container_mt-13] [INFO] [1762325247.850483825] [front_stereo_camera.left_resize_node]: [NitrosPublisher] Use the negotiated data format: "nitros_image_rgb8"
+[component_container_mt-13] [INFO] [1762325247.850496204] [front_stereo_camera.left_resize_node]: [NitrosPublisher] Use the negotiated data format: "nitros_camera_info"
+[component_container_mt-13] [INFO] [1762325247.850505513] [front_stereo_camera.left_resize_node]: [NitrosSubscriber] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325247.850513791] [front_stereo_camera.left_resize_node]: [NitrosSubscriber] Use the compatible subscriber: topic_name="/front_stereo_camera/left/image_raw", data_format="nitros_image_bgr8"
+[component_container_mt-13] [INFO] [1762325247.850523499] [front_stereo_camera.left_resize_node]: [NitrosSubscriber] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325247.850530861] [front_stereo_camera.left_resize_node]: [NitrosSubscriber] Use the compatible subscriber: topic_name="/front_stereo_camera/left/camera_info", data_format="nitros_camera_info"
+[component_container_mt-13] [INFO] [1762325247.850554496] [front_stereo_camera.left_resize_node]: [NitrosPublisherSubscriberGroup] Adjusted the compatible format of the component "sync/image_in" (type="nvidia::gxf::DoubleBufferReceiver") from "nitros_image_bgr8" to "nitros_image_rgb8"
+[component_container_mt-13] [INFO] [1762325247.850766673] [front_stereo_camera.left_resize_node]: [NitrosNode] Exporting the final graph based on the negotiation results
+[component_container_mt-13] [INFO] [1762325247.855875229] [front_stereo_camera.left_resize_node]: [NitrosNode] Wrote the final top level YAML graph to "/tmp/isaac_ros_nitros/graphs/XSGJJQEKGI/XSGJJQEKGI.yaml"
+[component_container_mt-13] [INFO] [1762325247.855912184] [front_stereo_camera.left_resize_node]: [NitrosNode] Loading application
+[component_container_mt-13] [INFO] [1762325247.858009124] [front_stereo_camera.left_resize_node]: [ResizeNode] postLoadGraphCallback().
+[component_container_mt-13] [INFO] [1762325247.858082062] [front_stereo_camera.left_resize_node]: [NitrosNode] Initializing and running GXF graph
+[component_container_mt-13] [INFO] [1762325247.869485391] [front_stereo_camera.left_resize_node]: [NitrosNode] Node was started
+[component_container_mt-13] [INFO] [1762325248.033044626] [front_stereo_camera.right_resize_node]: [NitrosNode] Starting post negotiation setup
+[component_container_mt-13] [INFO] [1762325248.033106568] [front_stereo_camera.right_resize_node]: [NitrosNode] Getting data format negotiation results
+[component_container_mt-13] [INFO] [1762325248.033114166] [front_stereo_camera.right_resize_node]: [NitrosPublisher] Use the negotiated data format: "nitros_image_rgb8"
+[component_container_mt-13] [INFO] [1762325248.033121148] [front_stereo_camera.right_resize_node]: [NitrosPublisher] Use the negotiated data format: "nitros_camera_info"
+[component_container_mt-13] [INFO] [1762325248.033126411] [front_stereo_camera.right_resize_node]: [NitrosSubscriber] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325248.033130336] [front_stereo_camera.right_resize_node]: [NitrosSubscriber] Use the compatible subscriber: topic_name="/front_stereo_camera/right/image_raw", data_format="nitros_image_bgr8"
+[component_container_mt-13] [INFO] [1762325248.033135411] [front_stereo_camera.right_resize_node]: [NitrosSubscriber] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325248.033138737] [front_stereo_camera.right_resize_node]: [NitrosSubscriber] Use the compatible subscriber: topic_name="/front_stereo_camera/right/camera_info", data_format="nitros_camera_info"
+[component_container_mt-13] [INFO] [1762325248.033153300] [front_stereo_camera.right_resize_node]: [NitrosPublisherSubscriberGroup] Adjusted the compatible format of the component "sync/image_in" (type="nvidia::gxf::DoubleBufferReceiver") from "nitros_image_bgr8" to "nitros_image_rgb8"
+[component_container_mt-13] [INFO] [1762325248.033328988] [front_stereo_camera.right_resize_node]: [NitrosNode] Exporting the final graph based on the negotiation results
+[component_container_mt-13] [INFO] [1762325248.039392978] [front_stereo_camera.right_resize_node]: [NitrosNode] Wrote the final top level YAML graph to "/tmp/isaac_ros_nitros/graphs/XBJHIQPKXN/XBJHIQPKXN.yaml"
+[component_container_mt-13] [INFO] [1762325248.039452087] [front_stereo_camera.right_resize_node]: [NitrosNode] Loading application
+[component_container_mt-13] [INFO] [1762325248.041142926] [front_stereo_camera.right_resize_node]: [ResizeNode] postLoadGraphCallback().
+[component_container_mt-13] [INFO] [1762325248.041174995] [front_stereo_camera.right_resize_node]: [NitrosNode] Initializing and running GXF graph
+[component_container_mt-13] [INFO] [1762325248.042552403] [front_stereo_camera.right_resize_node]: [NitrosNode] Node was started
+[component_container_mt-13] [INFO] [1762325248.102239479] [front_stereo_camera.left_rectify_node]: [NitrosNode] Starting post negotiation setup
+[component_container_mt-13] [INFO] [1762325248.102282997] [front_stereo_camera.left_rectify_node]: [NitrosNode] Getting data format negotiation results
+[component_container_mt-13] [INFO] [1762325248.102288583] [front_stereo_camera.left_rectify_node]: [NitrosPublisher] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325248.102293294] [front_stereo_camera.left_rectify_node]: [NitrosPublisher] Use only the compatible publisher: topic_name="/front_stereo_camera/left/image_rect", data_format="nitros_image_bgr8"
+[component_container_mt-13] [INFO] [1762325248.102297463] [front_stereo_camera.left_rectify_node]: [NitrosPublisher] Use the negotiated data format: "nitros_camera_info"
+[component_container_mt-13] [INFO] [1762325248.102302718] [front_stereo_camera.left_rectify_node]: [NitrosSubscriber] Use the negotiated data format: "nitros_image_rgb8"
+[component_container_mt-13] [INFO] [1762325248.102328447] [front_stereo_camera.left_rectify_node]: [NitrosSubscriber] Use the negotiated data format: "nitros_camera_info"
+[component_container_mt-13] [INFO] [1762325248.102344597] [front_stereo_camera.left_rectify_node]: [NitrosPublisherSubscriberGroup] Adjusted the compatible format of the component "image_sink/sink" (type="nvidia::isaac_ros::MessageRelay") from "nitros_image_bgr8" to "nitros_image_rgb8"
+[component_container_mt-13] [INFO] [1762325248.102561904] [front_stereo_camera.left_rectify_node]: [NitrosNode] Exporting the final graph based on the negotiation results
+[component_container_mt-13] [INFO] [1762325248.107044280] [front_stereo_camera.left_rectify_node]: [NitrosNode] Wrote the final top level YAML graph to "/tmp/isaac_ros_nitros/graphs/NJITFKVQVH/NJITFKVQVH.yaml"
+[component_container_mt-13] [INFO] [1762325248.107079162] [front_stereo_camera.left_rectify_node]: [RectifyNode] preLoadGraphCallback().
+[component_container_mt-13] [INFO] [1762325248.107097650] [front_stereo_camera.left_rectify_node]: [RectifyNode] preLoadGraphCallback() with image ([960] x [600]).[RectifyNode] preLoadGraphCallback() with interval ([1] x [1]).[RectifyNode] preLoadGraphCallback() with interpolation cubic_catmullrom and border type zero.
+[component_container_mt-13] [INFO] [1762325248.107112184] [front_stereo_camera.left_rectify_node]: [NitrosNode] Loading application
+[component_container_mt-13] [INFO] [1762325248.108756533] [front_stereo_camera.left_rectify_node]: [RectifyNode] postLoadGraphCallback().
+[component_container_mt-13] [INFO] [1762325248.108790457] [front_stereo_camera.left_rectify_node]: [NitrosNode] Initializing and running GXF graph
+[component_container_mt-13] [INFO] [1762325248.110024178] [front_stereo_camera.left_rectify_node]: [NitrosNode] Node was started
+[component_container_mt-13] [WARN] [1762325248.137644030] [NitrosCameraInfo]: [convert_to_ros_message] Failed to get the Rectified CameraModel object: Falling back to raw camera model
+[component_container_mt-13] [INFO] [1762325248.180304486] [front_stereo_camera.right_rectify_node]: [NitrosNode] Starting post negotiation setup
+[component_container_mt-13] [INFO] [1762325248.180354383] [front_stereo_camera.right_rectify_node]: [NitrosNode] Getting data format negotiation results
+[component_container_mt-13] [INFO] [1762325248.180362405] [front_stereo_camera.right_rectify_node]: [NitrosPublisher] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325248.180368731] [front_stereo_camera.right_rectify_node]: [NitrosPublisher] Use only the compatible publisher: topic_name="/front_stereo_camera/right/image_rect", data_format="nitros_image_bgr8"
+[component_container_mt-13] [INFO] [1762325248.180375106] [front_stereo_camera.right_rectify_node]: [NitrosPublisher] Use the negotiated data format: "nitros_camera_info"
+[component_container_mt-13] [INFO] [1762325248.180410800] [front_stereo_camera.right_rectify_node]: [NitrosSubscriber] Use the negotiated data format: "nitros_image_rgb8"
+[component_container_mt-13] [INFO] [1762325248.180454019] [front_stereo_camera.right_rectify_node]: [NitrosSubscriber] Use the negotiated data format: "nitros_camera_info"
+[component_container_mt-13] [INFO] [1762325248.180489656] [front_stereo_camera.right_rectify_node]: [NitrosPublisherSubscriberGroup] Adjusted the compatible format of the component "image_sink/sink" (type="nvidia::isaac_ros::MessageRelay") from "nitros_image_bgr8" to "nitros_image_rgb8"
+[component_container_mt-13] [INFO] [1762325248.180624791] [front_stereo_camera.right_rectify_node]: [NitrosNode] Exporting the final graph based on the negotiation results
+[component_container_mt-13] [INFO] [1762325248.185026782] [front_stereo_camera.right_rectify_node]: [NitrosNode] Wrote the final top level YAML graph to "/tmp/isaac_ros_nitros/graphs/BKABYTYVRO/BKABYTYVRO.yaml"
+[component_container_mt-13] [INFO] [1762325248.185065709] [front_stereo_camera.right_rectify_node]: [RectifyNode] preLoadGraphCallback().
+[component_container_mt-13] [INFO] [1762325248.185074795] [front_stereo_camera.right_rectify_node]: [RectifyNode] preLoadGraphCallback() with image ([960] x [600]).[RectifyNode] preLoadGraphCallback() with interval ([1] x [1]).[RectifyNode] preLoadGraphCallback() with interpolation cubic_catmullrom and border type zero.
+[component_container_mt-13] [INFO] [1762325248.185080479] [front_stereo_camera.right_rectify_node]: [NitrosNode] Loading application
+[component_container_mt-13] [INFO] [1762325248.186655459] [front_stereo_camera.right_rectify_node]: [RectifyNode] postLoadGraphCallback().
+[component_container_mt-13] [INFO] [1762325248.186682607] [front_stereo_camera.right_rectify_node]: [NitrosNode] Initializing and running GXF graph
+[component_container_mt-13] [INFO] [1762325248.187695620] [front_stereo_camera.right_rectify_node]: [NitrosNode] Node was started
+[planner_server-6] [INFO] [1762325248.278529138] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1762325248.279818975] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[component_container_mt-13] [INFO] [1762325248.290094123] [front_stereo_camera.disparity_node]: [NitrosNode] Starting post negotiation setup
+[component_container_mt-13] [INFO] [1762325248.290163783] [front_stereo_camera.disparity_node]: [NitrosNode] Getting data format negotiation results
+[component_container_mt-13] [INFO] [1762325248.290171283] [front_stereo_camera.disparity_node]: [NitrosPublisher] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325248.290176826] [front_stereo_camera.disparity_node]: [NitrosPublisher] Use only the compatible publisher: topic_name="/front_stereo_camera/disparity", data_format="nitros_disparity_image_32FC1"
+[component_container_mt-13] [INFO] [1762325248.290182807] [front_stereo_camera.disparity_node]: [NitrosSubscriber] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325248.290187112] [front_stereo_camera.disparity_node]: [NitrosSubscriber] Use the compatible subscriber: topic_name="/front_stereo_camera/left/image_rect", data_format="nitros_image_bgr8"
+[component_container_mt-13] [INFO] [1762325248.290191808] [front_stereo_camera.disparity_node]: [NitrosSubscriber] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325248.290195125] [front_stereo_camera.disparity_node]: [NitrosSubscriber] Use the compatible subscriber: topic_name="/front_stereo_camera/right/image_rect", data_format="nitros_image_bgr8"
+[component_container_mt-13] [INFO] [1762325248.290200766] [front_stereo_camera.disparity_node]: [NitrosSubscriber] Use the negotiated data format: "nitros_camera_info"
+[component_container_mt-13] [INFO] [1762325248.290206658] [front_stereo_camera.disparity_node]: [NitrosSubscriber] Use the negotiated data format: "nitros_camera_info"
+[component_container_mt-13] [INFO] [1762325248.290353605] [front_stereo_camera.disparity_node]: [NitrosNode] Exporting the final graph based on the negotiation results
+[rviz2-12] [INFO] [1762325248.294322601] [rviz2]: Trying to create a map of size 100 x 100 using 1 swatches
+[component_container_mt-13] [INFO] [1762325248.317450631] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Starting post negotiation setup
+[component_container_mt-13] [INFO] [1762325248.317507252] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Getting data format negotiation results
+[component_container_mt-13] [INFO] [1762325248.317523218] [front_stereo_camera.disparity_to_depth_node]: [NitrosPublisher] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325248.317534679] [front_stereo_camera.disparity_to_depth_node]: [NitrosPublisher] Use only the compatible publisher: topic_name="/front_stereo_camera/depth", data_format="nitros_image_32FC1"
+[component_container_mt-13] [INFO] [1762325248.317544647] [front_stereo_camera.disparity_to_depth_node]: [NitrosSubscriber] Negotiation ended with no results
+[component_container_mt-13] [INFO] [1762325248.317593073] [front_stereo_camera.disparity_to_depth_node]: [NitrosSubscriber] Use the compatible subscriber: topic_name="/front_stereo_camera/disparity", data_format="nitros_disparity_image_32FC1"
+[component_container_mt-13] [INFO] [1762325248.317742666] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Exporting the final graph based on the negotiation results
+[component_container_mt-13] [INFO] [1762325248.319296293] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Wrote the final top level YAML graph to "/tmp/isaac_ros_nitros/graphs/BOEZBATFLL/BOEZBATFLL.yaml"
+[component_container_mt-13] [INFO] [1762325248.319330221] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Loading application
+[component_container_mt-13] [INFO] [1762325248.320284730] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Initializing and running GXF graph
+[component_container_mt-13] [INFO] [1762325248.321075553] [front_stereo_camera.disparity_to_depth_node]: [NitrosNode] Node was started
+[rviz2-12] [ERROR] [1762325248.326624640] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-12] active samplers with a different type refer to the same texture image unit
+[component_container_mt-13] [INFO] [1762325248.354518063] [front_stereo_camera.disparity_node]: [NitrosNode] Wrote the final top level YAML graph to "/tmp/isaac_ros_nitros/graphs/QJZRFTJHCJ/QJZRFTJHCJ.yaml"
+[component_container_mt-13] [INFO] [1762325248.354591047] [front_stereo_camera.disparity_node]: [DisparityNode] preLoadGraphCallback().
+[component_container_mt-13] [INFO] [1762325248.354611993] [front_stereo_camera.disparity_node]: [NitrosNode] Loading application
+[component_container_mt-13] 2025-11-05 13:47:28.357 WARN  gxf/std/yaml_file_loader.cpp@1076: Using unregistered parameter 'left_image_name' in component ''.
+[component_container_mt-13] 2025-11-05 13:47:28.357 WARN  gxf/std/yaml_file_loader.cpp@1076: Using unregistered parameter 'right_image_name' in component ''.
+[component_container_mt-13] 2025-11-05 13:47:28.357 WARN  gxf/std/yaml_file_loader.cpp@1076: Using unregistered parameter 'output_name' in component ''.
+[component_container_mt-13] 2025-11-05 13:47:28.357 WARN  gxf/std/yaml_file_loader.cpp@1076: Using unregistered parameter 'min_disparity' in component ''.
+[component_container_mt-13] [INFO] [1762325248.357753760] [front_stereo_camera.disparity_node]: [DisparityNode] postLoadGraphCallback().
+[component_container_mt-13] [INFO] [1762325248.357840395] [front_stereo_camera.disparity_node]: [NitrosNode] Initializing and running GXF graph
+[component_container_mt-13] [INFO] [1762325248.359333881] [front_stereo_camera.disparity_node]: [NitrosNode] Node was started
+[lifecycle_manager-11] [INFO] [1762325248.383554514] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-11] [INFO] [1762325248.383616760] [lifecycle_manager_navigation]: Activating behavior_server
+[behavior_server-7] [INFO] [1762325248.383978908] [behavior_server]: Activating
+[behavior_server-7] [INFO] [1762325248.384005519] [behavior_server]: Activating spin
+[behavior_server-7] [INFO] [1762325248.384016900] [behavior_server]: Activating backup
+[behavior_server-7] [INFO] [1762325248.384025038] [behavior_server]: Activating drive_on_heading
+[behavior_server-7] [INFO] [1762325248.384032154] [behavior_server]: Activating assisted_teleop
+[behavior_server-7] [INFO] [1762325248.384044365] [behavior_server]: Activating wait
+[behavior_server-7] [INFO] [1762325248.384072690] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1762325248.488129907] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-11] [INFO] [1762325248.488206845] [lifecycle_manager_navigation]: Activating bt_navigator
+[rviz2-12] [INFO] [1762325248.488491342] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[bt_navigator-8] [INFO] [1762325248.488658732] [bt_navigator]: Activating
+[bt_navigator-8] [INFO] [1762325248.535080549] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1762325248.638698439] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-11] [INFO] [1762325248.638756418] [lifecycle_manager_navigation]: Activating waypoint_follower
+[planner_server-6] [INFO] [1762325248.639087876] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 125 X 149 at 0.050000 m/pix
+[waypoint_follower-9] [INFO] [1762325248.639147116] [waypoint_follower]: Activating
+[waypoint_follower-9] [INFO] [1762325248.639188802] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[rtabmap-2] [INFO] [1762325248.639889945] [rtabmap.rtabmap]: rtabmap (1): Rate=1.00s, Limit=0.000s, Conversion=0.0026s, RTAB-Map=0.0736s, Maps update=0.0052s pub=0.0016s delay=0.0500s (local map=1, WM=1)
+[rviz2-12] [INFO] [1762325248.647128625] [rviz2]: Trying to create a map of size 125 x 149 using 1 swatches
+[lifecycle_manager-11] [INFO] [1762325248.743453863] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-11] [INFO] [1762325248.743543693] [lifecycle_manager_navigation]: Activating velocity_smoother
+[velocity_smoother-10] [INFO] [1762325248.744402755] [velocity_smoother]: Activating
+[velocity_smoother-10] [INFO] [1762325248.744470682] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1762325248.849369430] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-11] [INFO] [1762325248.849429248] [lifecycle_manager_navigation]: Managed nodes are active
+[lifecycle_manager-11] [INFO] [1762325248.849435522] [lifecycle_manager_navigation]: Creating bond timer...
