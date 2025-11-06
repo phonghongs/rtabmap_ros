@@ -372,8 +372,8 @@ def launch_setup(context, *args, **kwargs):
     # ========================================
 
     nav2 = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([nav2_launch]),
         condition=IfCondition(LaunchConfiguration('nav2')),
-        launch_descriptor=PythonLaunchDescriptionSource([nav2_launch]),
         launch_arguments=[
             ('use_sim_time', 'true'),
             ('params_file', nav2_params)
